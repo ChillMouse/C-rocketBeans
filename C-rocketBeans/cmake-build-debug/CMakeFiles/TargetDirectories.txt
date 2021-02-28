@@ -1,3 +1,0 @@
-E:/Projects/Projects C and Cpp/C-rocketBeans/cmake-build-debug/CMakeFiles/C-rocketBeans.dir
-E:/Projects/Projects C and Cpp/C-rocketBeans/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/Projects/Projects C and Cpp/C-rocketBeans/cmake-build-debug/CMakeFiles/rebuild_cache.dir
