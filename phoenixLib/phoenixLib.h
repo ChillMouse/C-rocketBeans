@@ -30,7 +30,7 @@ void pauseConsole(){
 }
 
 void translateOutput(){
-    SetConsoleCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8); // Перевод консоли в кириллицу
     SetConsoleOutputCP(CP_UTF8);
 }
 /// Русские буквы в консоль: SetConsoleCP(1251); SetConsoleOutputCP(1251);
