@@ -71,6 +71,6 @@ int event1_p6(){
     return 0;
 }
 
-int getAfterBinary(int B, int C){
+int getAfterBinary(int B, int C){ //Нахождение арифметического &
    return ((B >> 1) & 126) & ((C >> 1) & 7);
 }
