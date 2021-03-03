@@ -4,4 +4,4 @@ project(C-rocketBeans C)
 set(CMAKE_CXX_STANDARD 17)
 set(SOURCE_FILES event1.c)
 
-add_executable(C-rocketBeans event1.c Lib1.h)
+add_executable(C-rocketBeans event1.c additionalVariables.h)
