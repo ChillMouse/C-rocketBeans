@@ -1,4 +1,4 @@
-#include "phoenixLib.h"
+#include "../../phoenixLib.h/phoenixLib.h/phoenixLib.h"
 #include "additionalVariables.h"
 
 static int a = 12, b = 8, c = 34, d = 123;
@@ -51,7 +51,7 @@ int event1_p5(){
     addit_A++;
     addit_D = getAfterBinary(*&addit_B, *&addit_C); // Арифметические операции.
 
-    printf(" A: %d; B: %d; C: %o; D: %o; Event1_p4\n", A, B, C, D); // Вывод
+    printf(" A: %d; B: %d; C: %o; D: %o; Event1_p4\n", *&addit_A, *&addit_B, *&addit_C, *&addit_D); // Вывод
 
     return 0;
 }
@@ -71,6 +71,6 @@ int event1_p6(){
     return 0;
 }
 
-int getAfterBinary(int B, int C){ //Нахождение арифметического &
-   return ((B >> 1) & 126) & ((C >> 1) & 7);
+int getAfterBinary(int B, int C){ // Нахождение арифметического &
+   return ((*&B >> 1) & 126) & ((*&C >> 1) & 7);
 }
