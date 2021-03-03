@@ -1,4 +1,4 @@
-#include "../phoenixLib/phoenixLib.h"
+#include "phoenixLib.h"
 
 static int a = 12, b = 8, c = 34, d = 123;
 
@@ -14,43 +14,43 @@ int main(){
     b /= 6;
     c += b - 1 + a;
     a++;
-    d = (b >> 1) & (c >> 1); // Арифметические преобразования
+    d = ((b >> 1) & 126) & ((c >> 1) & 7); // Арифметические преобразования
 
    printf(" A: %d; B: %d; C: %o; D: %o; Event1_p1\n", a, b, c, d); // Вывод преобразований
 
    a = 0; b = 0; c = 0; d = 0;
-   event1_p2(); // Задача 2.
-   event1_p3(); // Задача 3.
+   event1_p2();
+   event1_p3();
    return 0;
 }
 
 int event1_p2(){
-        int A = 512, B = 1024, C = 2048, D = 4096; // Локальные переменные.
-        A += B + 1 + C + 1;
-        A %= D;
-        B /= 6;
-        C += B - 1 + A;
-        A++;
-        D = (B >> 1) & (C >> 1); // Арифметические операции.
+        int a = 512, b = 1024, c = 2048, d = 4096;
+        a += b + 1 + c + 1;
+        a %= d;
+        b /= 6;
+        c += b - 1 + a;
+        a++;
+        d = ((b >> 1) & 126) & ((c >> 1) & 7);
 
-        printf(" A: %d; B: %d; C: %o; D: %o; Event1_p2\n", A, B, C, D); // Вывод
+        printf(" A: %d; B: %d; C: %o; D: %o; Event1_p2\n", a, b, c, d);
 
         return 0;
 }
 
 int event1_p3(){
-    int A, B, C, D;
-    printf("Введите значения переменных A, B, C, D:");
-    scanf("%d %d %d %d", &A, &B, &C, &D); // Считывание значений из консоли, которые мы вводим.
+    int a, b, c, d;
+    printf("Введите значения переменных a, b, c, d:");
+    scanf("%d%d%d%d", &a, &b, &c, &d);
 
-    A += B + 1 + C + 1;
-    A %= D;
-    B /= 6;
-    C += B - 1 + A;
-    A++;
-    D = (B >> 1) & (C >> 1); // Арифметические операции.
+    a += b + 1 + c + 1;
+    a %= d;
+    b /= 6;
+    c += b - 1 + a;
+    a++;
+    d = ((b >> 1) & 126) & ((c >> 1) & 7);
 
-    printf(" A: %d; B: %d; C: %o; D: %o; Event1_p3\n", A, B, C, D); // Вывод
+    printf(" A: %d; B: %d; C: %o; D: %o; Event1_p3\n", a, b, c, d);
 
     return 0;
 }
