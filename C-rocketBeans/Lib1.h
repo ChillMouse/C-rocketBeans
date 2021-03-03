@@ -6,4 +6,4 @@
 #define C_ROCKETBEANS_LIB1_H
 
 #endif //C_ROCKETBEANS_LIB1_H
-    static int A,B,C,D;
+    static int addit_A = 127, addit_B = 9837, addit_C = 67459, addit_D = 67825;
