@@ -1,0 +1,4 @@
+"E:\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" E:\Projects\C-rocketBeans\C-rocketBeans\work1
+-- Configuring done
+-- Generating done
+-- Build files have been written to: E:/Projects/C-rocketBeans/C-rocketBeans/work1/cmake-build-debug
